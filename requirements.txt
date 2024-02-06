@@ -5,6 +5,7 @@ python-dotenv
 streamlit
 openai
 Tabulate 
+googletrans==4.0.0-rc1
 
 # EDA
 # sweetviz
