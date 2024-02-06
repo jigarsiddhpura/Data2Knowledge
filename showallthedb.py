@@ -23,10 +23,6 @@ def write_answer(response_dict: dict):
         None.
     """
 
-    # Check if the response is an answer.
-    if "answer" in response_dict:
-        st.write(response_dict["answer"])
-
     # Check if the response is a bar chart.
     if "bar" in response_dict:
         data = response_dict["bar"]
@@ -47,6 +43,15 @@ def write_answer(response_dict: dict):
 
         except ValueError:
             print(f"Couldn't create DataFrame from data: {data}")
+
+    # Check if the response is an answer.
+    if "answer" in response_dict:
+        print("++++++",response_dict)
+        try:
+            ans = response_dict["answer"]
+        except:
+            ans = json.loads(response_dict["answer"])
+        st.write(ans)
 
 
 # Check if the response is a line chart.
@@ -86,7 +91,10 @@ def showallgraph():
             print("==============",new_data)
             new_data = new_data.replace("'", '"')
             print("--------------------> ", new_data, " <---")
-            data_1 = json.loads(new_data)
+            try:
+                data_1 = json.loads(new_data)
+            except:
+                pass
             print("--------------------> ", data_1, " <---")
             #write_answer(data_1)
             with col1:
@@ -96,8 +104,10 @@ def showallgraph():
         for row in data:
             new_data = row[1]
             new_data = new_data.replace("'", '"')
-            data_1 = json.loads(new_data)
-            #write_answer(data_1)
+            try:
+                data_1 = json.loads(new_data)
+            except:
+                pass
             with col2:
                 if 'answer' in data_1:
                     st.write(row[0])
@@ -106,8 +116,10 @@ def showallgraph():
             new_data = row[1]
             new_data = new_data.replace("'", '"')
             print(new_data)
-            data_1 = json.loads(new_data)
-            #write_answer(data_1)
+            try:
+                data_1 = json.loads(new_data)
+            except:
+                data_1 = new_data
             if 'line' in data_1:
                 with col3:
                     st.write(row[0])
@@ -116,8 +128,10 @@ def showallgraph():
         for row in data:
             new_data = row[1]
             new_data = new_data.replace("'", '"')
-            data_1 = json.loads(new_data)
-            #write_answer(data_1)
+            try:
+                data_1 = json.loads(new_data)
+            except:
+                data_1 = new_data
             if 'table' in data_1:
                 st.write(row[0])
                 write_answer(data_1)
