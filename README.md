@@ -1,4 +1,10 @@
-![WhatsApp Image 2024-02-06 at 17 24 32_2c0b3fb8](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/52bab30e-8b63-4ac2-a5e5-e2bb139a97f2)
+
+![WhatsApp Image 2024-02-06 at 17 24 32_2c0![Wha![WhatsApp Image 2024-02-06 at 17 30 53_58e4ed4f](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/66d31bb7-669d-42f7-8359-f618e0965a3e)
+tsApp Image 2024-02-0![WhatsApp Image 2024-02-06 at 17 31 14_7b35e787](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/d9cbe641-708d-4437-b3e6-916d953165d2)
+6 at 17 30 41_845f6fc9](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/fdd058a4-9757-4e5b-afd4-671bb5df04c4)
+b3fb![WhatsApp Image 2024-02-06 at 17 30 32_2ebd59c6](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/25b8f73f-efcb-4a63-b82e-3b420bf0837f)
+8](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/52bab30e-8b63-4ac2-a5e5-e2bb139a97f2)
 ![WhatsApp Image 2024-02-06 at 17 25 17_ce08b69e](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/b8b94a7f-b4e9-4f2c-be0f-80634fb89e9f)
 ![WhatsApp Image 2024-02-06 at 17 28 35_646e29fd](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/0331b7eb-577c-4fe7-bcda-bca8d4ca184d)
-![WhatsApp Image 2024-02-06 at 17 29 12_e6339c68](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/0fd4857f-1979-4375-9ba5-d37e2b0e415f)
+![WhatsApp Image 2024-02-06 at 17 29 12_e63![WhatsApp Image 2024-02-06 at 17 31 14_cf6e9ba1](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/e7cb66ed-4329-4405-b035-7f8faa80fde5)
+39c68](https://github.com/jigarsiddhpura/Data2Knowledge/assets/20314019/0fd4857f-1979-4375-9ba5-d37e2b0e415f)
