@@ -121,3 +121,4 @@ def showallgraph():
             if 'table' in data_1:
                 st.write(row[0])
                 write_answer(data_1)
+

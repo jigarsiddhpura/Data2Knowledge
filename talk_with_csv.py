@@ -92,7 +92,7 @@ def ask_agent(agent, query):
 
         Return all output as a string. Remember to encase all strings in the "columns" list and data list in double quotes. 
         For example: {"columns": ["Products", "Orders"], "data": [["51993Masc", 191], ["49631Foun", 152]]}
-
+        Note: for any graph, just consider first 50 rows
         Now, let's tackle the query step by step. Here's the query for you to work on: 
         """ + query)
 
@@ -180,6 +180,8 @@ def write_answer(response_dict: dict):
 def save_to_database():
     query = st.session_state.get('query', '')
     answer = st.session_state.get('response', '')
+    print(query)
+    print(answer)
     cursor.execute(
         "CREATE TABLE IF NOT EXISTS savedgraphs (query TEXT, answer TEXT)")
     cursor.execute("INSERT INTO savedgraphs (query, answer) VALUES (?, ?)",
@@ -206,7 +208,7 @@ def welcome():
         "If the result want to be stored or added to the dashboard then a button is provided which is Add to canva which will add result to the dashboard"
     )
     st.write(
-        "A dashborad is available which is used to display the chart stored by the user"
+        "A dashboard is available which is used to display the chart stored by the user"
     )
 
     if st.button("Take me to site"):
@@ -225,11 +227,11 @@ def login():
                                        accept_multiple_files=False,
                                        key="fileUploader")
 
-    if uploaded_file is not None:
-        if tab1.button("Generate stats data"):
-            filename = uploaded_file.name
-            df = pd.read_csv(filename)
-            pandas_profiling(df)
+    # if uploaded_file is not None:
+    #     if tab1.button("Generate stats data"):
+    #         filename = uploaded_file.name
+    #         df = pd.read_csv(filename)
+    #         pandas_profiling(df)
 
     query = tab1.text_area("Send a Message")
 
@@ -257,9 +259,9 @@ def login():
     if tab1.button("Add this to Canva"):
         save_to_database()
 
-    # with tab2:
-    #     tab2.subheader("All the graphs")
-    #     showallgraph()
+    with tab2:
+        tab2.subheader("All the graphs")
+        showallgraph()
 
 # def sweetviz(df):
 #     analyze_report = sv.analyze(df)
